@@ -1,0 +1,23 @@
+<form (ngSubmit)="salvar()">   
+ 
+    <br/>
+    <h3>{{titulo}}</h3>
+ 
+    <label>Código:
+        <input type="input" name="id" size="10" [(ngModel)]="produto.id" disabled/>
+    </label><br/><br/>
+ 
+    <label>Nome:
+        <input type="input" name="nome" size="30" [(ngModel)]="produto.nome"/>
+    </label><br/><br/>
+ 
+    <label>Quantidade:
+        <input type="input" name="quantidade" size="30" [(ngModel)]="produto.quantidade"/>
+    </label><br/><br/>
+
+    <label>Valor:
+        <input type="input" name="valor" size="30" [(ngModel)]="produto.valor"/>
+    </label><br/><br/>
+ 
+    <button type="submit">Salvar</button>
+</form>
